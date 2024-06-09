@@ -128,7 +128,6 @@ router.post("/register", signupCheck, async (req, res) => {
  *                 error:
  *                   type: string
  */
-// router.post("/login", SignIn);
 router.post("/login", async (req, res) => {
   try {
     const {
@@ -153,7 +152,7 @@ router.post("/login", async (req, res) => {
       });
     handleResponse({ res, data });
   } catch (err) {
-    // handleError({ res, err })
+    handleError({ res, err });
   }
 });
 /**
