@@ -96,7 +96,6 @@ router.get("/get-blogs", async (req, res) => {
  *                   type: string
  */
 
-// authenticateJWT
 router.post("/create", authenticateJWT, async (req, res) => {
   try {
     const {

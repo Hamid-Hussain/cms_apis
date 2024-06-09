@@ -1,6 +1,6 @@
-# Blog API
+# CMS API's
 
-This project is a simple Blog API built with Node.js, Express, PostgreSQL, and Sequelize. It includes user authentication and blog CRUD operations.
+This project is a CMS (Content Management System) API developed using Node.js, PostgreSQL as the database, and Sequelize as the ORM. The API includes user authentication and blog management features, allowing users to create, update, delete, and retrieve blog posts.
 
 ## Table of Contents
 
@@ -13,13 +13,32 @@ This project is a simple Blog API built with Node.js, Express, PostgreSQL, and S
 
 ## Installation
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/blog-api.git
-   cd blog-api
-   ```
-2. npm install
-3. create a .env file
-4. Run migrations
-   npx sequelize-cli db:migrate
-5. npm start
+```
+
+git clone https://github.com/Hamid-Hussain/cms_apis.git
+
+cd cms_apis
+
+DATABASE_URL=your_database_url
+JWT_SECRET=your_jwt_secret
+
+npx sequelize-cli db:migrate
+
+
+npm run dev
+
+```
+
+## Usage
+
+```
+To use the API, navigate to http://localhost:5500/api-docs/#/ in your browser. You can interact with the API through the Swagger UI if set up.
+
+
+```
+
+## Api Endpoints
+
+```
+Navigate to http://localhost:5500/api-docs/#/ in your browser. You can interact with the API through the Swagger UI if set up.
+```
