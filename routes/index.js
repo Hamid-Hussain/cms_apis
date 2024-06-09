@@ -32,7 +32,7 @@ const router = express.Router();
 //     res.status(400).json({ error: error.message });
 //   }
 // });
-// router.use("/auth", auth);
+router.use("/auth", auth);
 router.use("/blog", blog);
 // router.get("/blogs", getBlogs);
 
