@@ -1,4 +1,4 @@
-// export ForgetPassword from './forget-password';
-// export ResetPassword from './reset-password';
-// export SignIn from "./sign-in";
-// export SignUp from "./sign-up";
+import SignIn from "./sign-in";
+import SignUp from "./sign-up";
+
+export { SignIn, SignUp };
