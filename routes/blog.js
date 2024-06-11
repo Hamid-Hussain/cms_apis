@@ -201,13 +201,6 @@ router.put("/update", authenticateJWT, async (req, res) => {
  *     tags: [Blog]
  *     security:
  *       - bearerAuth: []
- *     parameters:
- *       - in: path
- *         name: id
- *         required: true
- *         schema:
- *           type: integer
- *         description: The blog ID
  *     requestBody:
  *       required: true
  *       content:
