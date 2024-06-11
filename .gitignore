@@ -11,3 +11,8 @@
 yarn.lock
 yarn-error
 npm-debug.log*
+
+# Local env files
+.env
+.env.*
+!.env.example
