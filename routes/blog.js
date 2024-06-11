@@ -198,7 +198,7 @@ router.put("/update", authenticateJWT, async (req, res) => {
  * /blog/update:
  *   put:
  *     summary: Update an existing blog
- *     tags: [Blogs]
+ *     tags: [Blog]
  *     security:
  *       - bearerAuth: []
  *     parameters:
@@ -215,6 +215,9 @@ router.put("/update", authenticateJWT, async (req, res) => {
  *           schema:
  *             type: object
  *             properties:
+ *               id:
+ *                 type: integer
+ *                 description: The id of the blog
  *               title:
  *                 type: string
  *                 description: The title of the blog
@@ -260,7 +263,7 @@ router.get("/:id", getSingleBlog);
  * /blog/{id}:
  *   get:
  *     summary: Get a single blog by ID
- *     tags: [Blogs]
+ *     tags: [Blog]
  *     parameters:
  *       - in: path
  *         name: id
@@ -319,7 +322,7 @@ router.delete("/:id", authenticateJWT, deleteBlog);
  *   delete:
  *     summary: Delete a blog by ID
  *     description: Deletes a blog post if the authenticated user is the author.
- *     tags: [Blogs]
+ *     tags: [Blog]
  *     security:
  *       - bearerAuth: []
  *     parameters:
